@@ -1,0 +1,28 @@
+timm==0.6.12
+fvcore==0.1.5.post20220305
+hydra-core==1.2.0
+numpy>=1.24.1
+opencv-python
+pillow==9.4.0
+scikit-image>=0.19.2
+scikit-learn>=1.0.2
+ufmt==2.0.1
+usort==1.0.2
+flake8==3.9.2
+flake8-bugbear
+cloudpickle
+future
+pydot
+omegaconf>=2.1
+scipy>1.5.1
+protobuf>=3.12.0
+regex
+ftfy
+torch==1.13.1+cu117
+-f https://download.pytorch.org/whl/torch_stable.html
+torchvision==0.14.1+cu117
+-f https://download.pytorch.org/whl/cu113/torch_stable.html
+h5py==3.7.0
+av==10.0.0
+nltk==3.7
+pyinflect>=0.5.1

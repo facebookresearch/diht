@@ -1,0 +1,38 @@
+name: build-and-test
+on: [push]
+jobs:
+  lint:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      - name: Install requirements
+        run: |
+          python -m venv ~/venv
+          . ~/venv/bin/activate
+          pip install ufmt==2.0.1
+      - name: Run ufmt
+        run: |
+          . ~/venv/bin/activate
+          ufmt check .
+  test:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+      - name: Install requirements
+        run: |
+          python -m venv ~/venv
+          . ~/venv/bin/activate
+          pip install -r requirements.txt
+          pip install -e .
+      - name: Run ow_tests
+        run: |
+          . ~/venv/bin/activate
+          python -m unittest discover -v -s ./tests
