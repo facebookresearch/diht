@@ -1,0 +1,22 @@
+checkpoint_url: https://dl.fbaipublicfiles.com/diht/diht_vitb16_224px_d2f68609e5d0469c824cd16353375cf7c47b468666fdfcd8baecf06705e4a6f0.ckpt
+image_transform:
+  image_size: 224
+  mean: [0.48145466, 0.4578275, 0.40821073]
+  std: [0.26862954, 0.26130258, 0.27577711]
+text_transform:
+  text_tokenizer_name: "clip"
+model_cfg:
+  name: DiHT
+  params:
+    embed_dim: 512
+    vision_cfg:
+      image_size: 224
+      layers: 12
+      width: 768
+      patch_size: 16
+    text_cfg:
+      context_length: 77
+      vocab_size: 49408
+      width: 512
+      heads: 8
+      layers: 12

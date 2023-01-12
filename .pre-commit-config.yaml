@@ -1,0 +1,20 @@
+repos:
+  - repo: https://github.com/omnilib/ufmt
+    rev: v2.0.1
+    hooks:
+      - id: ufmt
+
+  - repo: https://github.com/PyCQA/flake8
+    rev: 3.9.2
+    hooks:
+      - id: flake8
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-docstring-first
+      - id: check-toml
+      - id: check-yaml
+        exclude: packaging/.*
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
