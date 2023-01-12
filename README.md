@@ -58,6 +58,21 @@ import diht
 print(diht.available_models())
 ```
 
+## Citation
+If you find this model useful, please consider citing our preprint using the citation below.
+``` 
+@article{rdk+23,
+  doi = {10.48550/ARXIV.2301.02280},
+  url = {https://arxiv.org/abs/2301.02280},
+  author = {Radenovic, Filip and Dubey, Abhimanyu and Kadian, Abhishek and Mihaylov, Todor and Vandenhende, Simon and Patel, Yash and Wen, Yi and Ramanathan, Vignesh and Mahajan, Dhruv},
+  keywords = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training},
+  publisher = {arXiv},
+  year = {2023},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+```
+
 ## License
 ```
 Copyright (c) Meta Platforms, Inc. and affiliates.
