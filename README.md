@@ -1,8 +1,5 @@
-# **Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training**
 # DiHT
-Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training
-
-[[Paper](https://arxiv.org/abs/2301.02280)]
+"Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training" [[Paper](https://arxiv.org/abs/2301.02280)]
 
 ## Installation
 
