@@ -62,7 +62,7 @@ print(diht.available_models())
 ```
 
 ## Citation
-If you find this model useful, please cite our preprint using the citation below.
+If you find this model useful, please consider citing our preprint using the citation below.
 ``` 
 @article{rdk+23,
   doi = {10.48550/ARXIV.2301.02280},
