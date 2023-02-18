@@ -60,14 +60,30 @@ print(diht.available_models())
 
 ## Example ImageNet-1K zero-shot evaluation
 
-A simple zero-shot evaluation using a single GPU can be performed by running:
-> **Note**: Edit `IMAGENET_ROOT` in `example_imagenet_eval.py` to match the location on your machine.
+A simple image classification zero-shot evaluation using a single GPU can be performed by running:
+> **Note**: Download ImageNet-1K dataset from the original website. Edit `IMAGENET_ROOT` in `example_imagenet_eval.py` to match the location on your machine.
 ```
 python example_imagenet_eval.py
 ```
 For DiHT-L/14@336 the output should look like:
 ```
 ImageNet1K acc@1 for diht_vitl14_336px: 77.9
+```
+
+## Example retrieval zero-shot evaluation
+
+A simple retrieval zero-shot evaluation using a single GPU can be performed by running:
+> **Note**: Download COCO and Flickr30K datasets from the original websites. Json files (`coco_test.json` and `flickr30k_test.json`) can be downloaded from https://github.com/salesforce/ALBEF#download. Edit `COCO_ROOT` and `FLICKR30K_ROOT` in `example_retrieval_eval.py` to match the locations on your machine.
+```
+python example_retrieval_eval.py
+```
+For DiHT-L/14@336 the output should look like:
+```
+COCO T2I r@1 for diht_vitl14_336px: 49.3
+COCO I2T for diht_vitl14_336px: 65.3
+
+Flickr30K T2I r@1 for diht_vitl14_336px: 78.2
+Flickr30K I2T for diht_vitl14_336px: 91.1
 ```
 
 
