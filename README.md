@@ -58,9 +58,22 @@ import diht
 print(diht.available_models())
 ```
 
+## Example ImageNet-1K zero-shot evaluation
+
+A simple zero-shot evaluation using a single GPU can be performed by running:
+> **Note**: Edit `IMAGENET_ROOT` in `example_imagenet_eval.py` to match the location on your machine.
+```
+python example_imagenet_eval.py
+```
+For DiHT-L/14@336 the output should look like:
+```
+ImageNet1K acc@1 for diht_vitl14_336px: 77.9
+```
+
+
 ## Citation
 If you find this model useful, please consider citing our preprint using the citation below.
-``` 
+```
 @article{rdk+23,
   title = {Filtering, Distillation, and Hard Negatives for Vision-Language Pre-Training},
   author = {Radenovic, Filip and Dubey, Abhimanyu and Kadian, Abhishek and Mihaylov, Todor and Vandenhende, Simon and Patel, Yash and Wen, Yi and Ramanathan, Vignesh and Mahajan, Dhruv},
