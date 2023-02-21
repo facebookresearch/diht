@@ -86,6 +86,18 @@ Flickr30K T2I r@1 for diht_vitl14_336px: 78.2
 Flickr30K I2T for diht_vitl14_336px: 91.1
 ```
 
+## Zero-shot model performance
+
+| Model | ImageNet-1K | COCO T2I | COCO I2T | Flickr30K T2I | Flickr30K I2T |
+| :---  |    :----:   |  :----:  |  :----:  |     :----:    |     :----:    |
+|       |  Accuracy@1 | Recall@1 | Recall@1 |    Recall@1   |    Recall@1   |
+| diht_vitb32_224px_s16b | 67.5 | 40.3 | 56.3 | 67.9 | 83.8 |
+| diht_vitb32_224px_s32b | 68.0 | 40.6 | 59.3 | 68.6 | 84.4 |
+| diht_vitb16_224px_s16b | 71.9 | 43.7 | 62.0 | 73.2 | 89.5 |
+| diht_vitb16_224px_s32b | 72.2 | 43.3 | 60.3 | 72.9 | 89.8 |
+| diht_vitl14_224px      | 77.0 | 48.0 | 65.1 | 76.7 | 92.0 |
+| diht_vitl14_336px      | 77.9 | 49.3 | 65.3 | 78.2 | 91.1 |
+
 
 ## Citation
 If you find this model useful, please consider citing our preprint using the citation below.
