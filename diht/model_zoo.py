@@ -89,7 +89,9 @@ def _load_model_ckpt(model, checkpoint_path):
 
 
 def available_models():
-    return [model.name[: -len(".yaml")] for model in CONFIG_DIRPATH.rglob("*.yaml")]
+    return sorted(
+        [model.name[: -len(".yaml")] for model in CONFIG_DIRPATH.rglob("*.yaml")]
+    )
 
 
 def load_model(model_name, is_train=False, download_root=None):
