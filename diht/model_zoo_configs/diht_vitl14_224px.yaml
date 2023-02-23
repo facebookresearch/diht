@@ -1,4 +1,4 @@
-checkpoint_url: https://dl.fbaipublicfiles.com/diht/diht_vitb32_224px_0cee3cbdf80edc3a9b3add0a913eb0f293839d807423ae1eb6dfe57be3550586.ckpt
+checkpoint_url: https://dl.fbaipublicfiles.com/diht/diht_vitl14_224px_eaf1e498d0a40aef206329a2d5753f3d479f550d72631e26f89f67878d06afa8.ckpt
 image_transform:
   image_size: 224
   mean: [0.48145466, 0.4578275, 0.40821073]
@@ -8,15 +8,15 @@ text_transform:
 model_cfg:
   name: DiHT
   params:
-    embed_dim: 512
+    embed_dim: 768
     vision_cfg:
       image_size: 224
-      layers: 12
-      width: 768
-      patch_size: 32
+      layers: 24
+      width: 1024
+      patch_size: 14
     text_cfg:
       context_length: 77
       vocab_size: 49408
-      width: 512
-      heads: 8
+      width: 768
+      heads: 12
       layers: 12
