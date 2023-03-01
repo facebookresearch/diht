@@ -144,7 +144,7 @@ def main():
         coco_dataset._img2txt,
     )
     print(f"COCO T2I r@1 for {MODEL_NAME}: {100*coco_t2i[1]:.1f}")
-    print(f"COCO I2T for {MODEL_NAME}: {100*coco_i2t[1]:.1f}")
+    print(f"COCO I2T r@1 for {MODEL_NAME}: {100*coco_i2t[1]:.1f}")
 
     # compute image features
     print("Extract features for Flickr30K ...")
@@ -163,7 +163,7 @@ def main():
         flickr30k_dataset._img2txt,
     )
     print(f"Flickr30K T2I r@1 for {MODEL_NAME}: {100*flickr30k_t2i[1]:.1f}")
-    print(f"Flickr30K I2T for {MODEL_NAME}: {100*flickr30k_i2t[1]:.1f}")
+    print(f"Flickr30K I2T r@1 for {MODEL_NAME}: {100*flickr30k_i2t[1]:.1f}")
 
 
 if __name__ == "__main__":
