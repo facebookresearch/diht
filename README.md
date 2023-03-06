@@ -80,10 +80,10 @@ python example_retrieval_eval.py
 For DiHT-L/14@336 the output should look like:
 ```
 COCO T2I r@1 for diht_vitl14_336px: 49.3
-COCO I2T for diht_vitl14_336px: 65.3
+COCO I2T r@1 for diht_vitl14_336px: 65.3
 
 Flickr30K T2I r@1 for diht_vitl14_336px: 78.2
-Flickr30K I2T for diht_vitl14_336px: 91.1
+Flickr30K I2T r@1 for diht_vitl14_336px: 91.1
 ```
 
 ## Zero-shot model performance
