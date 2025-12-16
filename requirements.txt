@@ -3,7 +3,7 @@ fvcore==0.1.5.post20220305
 hydra-core==1.2.0
 numpy>=1.24.1
 opencv-python
-pillow==9.4.0
+pillow==10.3.0
 scikit-image>=0.19.2
 scikit-learn>=1.0.2
 ufmt==2.0.1
